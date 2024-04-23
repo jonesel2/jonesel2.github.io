@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {"text": "Exports by Country"},
+ 
+  "width": 400,
+  "height": 300,
+   
+  "data": {
+    "values": [
+        {"Country": "China","Exports": 21482},
+        {"Country": "DR Congo.","Exports": 1337},
+        {"Country": "UK","Exports": 54929},
+        {"Country": "India","Exports": 8400},
+        {"Country": "Nigeria","Exports": 5862},
+        {"Country": "USA","Exports": 76329}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "purple"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "Exports",
+      "type": "quantitative"}}
+}
